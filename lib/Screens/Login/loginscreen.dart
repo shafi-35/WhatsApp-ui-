@@ -112,8 +112,8 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ],
       ), 
-      // floatingActionButton: UiHelper.CustomButton(callback: (){}, buttonname: "Next"),
-      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: UiHelper.CustomButton(callback: (){}, buttonname: "Next"),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

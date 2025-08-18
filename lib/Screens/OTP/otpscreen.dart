@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:waclone/Screens/Profile/profilescreen.dart';
 import 'package:waclone/Widgets/uihelper.dart';
 
 class OTPScreen extends StatelessWidget {
@@ -84,7 +85,9 @@ class OTPScreen extends StatelessWidget {
           ],
         ),
       ), 
-      floatingActionButton: UiHelper.CustomButton(callback: (){}, buttonname: "Next"),
+      floatingActionButton: UiHelper.CustomButton(callback: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
+      }, buttonname: "Next"),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }

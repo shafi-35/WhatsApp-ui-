@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:waclone/Screens/Splash/splashscreen.dart';
 
+import 'Screens/Home/homescreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
         fontFamily: "Regular"
       ),
-      home: SplashScreen(),
+      home: HomeScreen(),
     );
   }
 }
